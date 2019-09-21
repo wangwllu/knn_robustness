@@ -9,6 +9,8 @@ The official implementations of algorithms proposed in the paper [Evaluating the
 - **QP-relax**: computes lower bounds (verification) of minimum adversarial perturbations for general **K-NN**.
 - **QP-greedy**: computes upper bounds (attack) of minimum adversarial perturbations for general **K-NN**.
 
+Moreover, other compared attack algorithms are also implemented.
+
 ## Getting started with the code
 
 Our program is tested on Python 3.7.
