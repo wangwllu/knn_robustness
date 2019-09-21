@@ -123,3 +123,4 @@ dmypy.json
 .pyre/
 
 results/
+upload.sh
