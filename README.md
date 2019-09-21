@@ -19,7 +19,7 @@ The required packages are
 - numpy
 - scikit-learn
 - pandas (only used to collect results)
-- pytorch (only used to load MNIST and Fashion-MNIST)
+- pytorch (only used to load MNIST and Fashion-MNIST, and the substitute attack)
 
 For example, if you want to run **QP-exact** on the `Letter` dataset,
 
