@@ -7,7 +7,7 @@ from knn_robustness.utils import initialize_params
 from knn_robustness.utils import initialize_data
 
 
-params = initialize_params('relax')
+params = initialize_params('verify')
 X_train, y_train, X_test, y_test = initialize_data(params)
 
 verifier = RelaxVerifier(

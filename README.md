@@ -6,7 +6,7 @@ The official implementations of algorithms proposed in the paper [Evaluating the
 
 - **QP-exact**: computes exact minimum adversarial perturbations for 1-NN.
 - **QP-top**: computes upper bounds (attack) of minimum adversarial perturbations for 1-NN.
-- **QP-relax**: computes lower bounds (verification) of minimum adversarial perturbations for general **K-NN**.
+- **QP-verify**: computes lower bounds (verification) of minimum adversarial perturbations for general **K-NN**.
 - **QP-greedy**: computes upper bounds (attack) of minimum adversarial perturbations for general **K-NN**.
 
 Moreover, other compared attack algorithms are also implemented.
@@ -27,6 +27,6 @@ For example, if you want to run **QP-exact** on the `Letter` dataset,
 2. Move `letter.scale` and `letter.scale.t` to the directory appointed by the field `dataset_dir`;
 3. Run `python main_exact.py`.
 
-`Letter`, `Pendigits`, `USPS` and `Satimage` can be downloaded from [LibSVM Data](Pendigits).
+Datasets `Letter`, `Pendigits`, `USPS` and `Satimage` can be downloaded from [LibSVM Data](Pendigits).
 `MNIST` and `Fashion-MNIST` should be downloaded by PyTorch.
 Other datasets can be easily supported by implementing the abstract class `Loader` in `knn_robustness/utils/loaders`.
