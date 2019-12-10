@@ -126,13 +126,13 @@ class ExactSolver:
             # upper bound
             # A1 @ delta <= b1
             # z + delta <= upper
-            A1 = np.identity(X_pos.shape[1])
+            A1 = np.identity(X_pos.shape[1], dtype=X_pos.dtype)
             b1 = self._upper - x_eval
 
             # lower bound
             # A2 @ delta <= b2
             # z + delta >= lower
-            A2 = -np.identity(X_pos.shape[1])
+            A2 = -np.identity(X_pos.shape[1], dtype=X_pos.dtype)
             b2 = x_eval - self._lower
 
             # A_full @ A_full.T

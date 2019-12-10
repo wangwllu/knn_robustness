@@ -24,12 +24,12 @@ class TestExactSolver(unittest.TestCase):
         self.assertTrue(
             np.allclose(
                 perturbation,
-                np.array([-0.25, 0.25], dtype=np.float)
+                np.array([-0.25, 0.25], dtype=self.X_train.dtype)
             )
         )
-        # self.assertEqual(
-        #     perturbation.dtype, self.X_train.dtype
-        # )
+        self.assertEqual(
+            perturbation.dtype, self.X_train.dtype
+        )
 
     def test_bounded(self):
         solver = ExactSolver(
@@ -40,9 +40,9 @@ class TestExactSolver(unittest.TestCase):
         self.assertTrue(
             np.allclose(
                 perturbation,
-                np.array([0, 0.5], dtype=np.float)
+                np.array([0, 0.5], dtype=self.X_train.dtype)
             )
         )
-        # self.assertEqual(
-        #     perturbation.dtype, self.X_train.dtype
-        # )
+        self.assertEqual(
+            perturbation.dtype, self.X_train.dtype
+        )

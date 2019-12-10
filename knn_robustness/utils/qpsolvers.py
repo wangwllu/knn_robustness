@@ -19,7 +19,7 @@ class GcdQpSolver(QpSolver):
 
     def __call__(self, Q, b):
         K = Q.shape[0]
-        alpha = np.zeros((K,))
+        alpha = np.zeros((K,), dtype=Q.dtype)
         g = b
         Qdiag = np.diag(Q)
         for i in range(self._max_iter):
